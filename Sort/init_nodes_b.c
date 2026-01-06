@@ -6,7 +6,7 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 18:31:40 by amamun            #+#    #+#             */
-/*   Updated: 2026/01/05 20:02:52 by amamun           ###   ########.fr       */
+/*   Updated: 2026/01/06 21:23:17 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ static void	set_target_b(t_stack_node *a, t_stack_node *b)
 
 void	init_nodes_b(t_stack_node *a, t_stack_node *b)
 {
-
 	set_current_position(a);
 	set_current_position(b);
 	set_target_b(a, b);

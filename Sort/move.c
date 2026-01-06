@@ -6,7 +6,7 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 17:12:46 by amamun            #+#    #+#             */
-/*   Updated: 2026/01/05 20:41:14 by amamun           ###   ########.fr       */
+/*   Updated: 2026/01/06 21:23:38 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	move_a_to_b(t_stack_node **a, t_stack_node **b)
 		pb(a, b, false);
 		return ;
 	}
-	if (cheapest_node->above_median 
+	if (cheapest_node->above_median
 		&& cheapest_node->target_node->above_median)
 		rotate_both(a, b, cheapest_node);
 	else if (!(cheapest_node->above_median)

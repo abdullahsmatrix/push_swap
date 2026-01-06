@@ -6,7 +6,7 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 19:16:08 by amamun            #+#    #+#             */
-/*   Updated: 2026/01/05 19:42:32 by amamun           ###   ########.fr       */
+/*   Updated: 2026/01/06 21:11:55 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,13 @@ void					init_nodes_a(t_stack_node *a, t_stack_node *b);
 void					init_nodes_b(t_stack_node *a, t_stack_node *b);
 /////////////Libft////////////////////
 char					**ft_split(char *s, char c);
-int						ft_strlcpy(char *dest, char const *src, size_t n);
-int						ft_strlen(char const *str);
-
 //////////////Parsing/////////////////
 void					init_stack(t_stack_node **a, char **argv);
 int						syntax_error(char *argv);
 int						have_duplicates(t_stack_node *a, int nbr);
 void					free_stack(t_stack_node **stack);
 void					free_errors(t_stack_node **a);
-
+void					free_split(char **arr);
 ///////////////Operations/////////////
 void					sa(t_stack_node **a, bool checker);
 void					sb(t_stack_node **b, bool checker);

@@ -6,7 +6,7 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 19:34:11 by amamun            #+#    #+#             */
-/*   Updated: 2026/01/04 20:24:43 by amamun           ###   ########.fr       */
+/*   Updated: 2026/01/06 21:25:20 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ t_stack_node	*find_largest_node(t_stack_node *stack)
 	}
 	return (largest_node);
 }
+
 t_stack_node	*find_last_node(t_stack_node *stack)
 {
 	t_stack_node	*last_node;

@@ -6,7 +6,7 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:43:54 by amamun            #+#    #+#             */
-/*   Updated: 2026/01/04 20:27:29 by amamun           ###   ########.fr       */
+/*   Updated: 2026/01/06 21:22:45 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,16 @@ void	free_stack(t_stack_node **stack)
 		current = tmp;
 	}
 	*stack = NULL;
+}
+
+void	free_split(char **arr)
+{
+	int	i;
+
+	i = 0;
+	while (arr[i])
+		free(arr[i++]);
+	free(arr);
 }
 
 void	free_errors(t_stack_node **a)

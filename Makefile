@@ -6,7 +6,7 @@
 #    By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/04 19:30:00 by amamun            #+#    #+#              #
-#    Updated: 2026/01/05 20:05:07 by amamun           ###   ########.fr        #
+#    Updated: 2026/01/06 19:45:49 by amamun           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,6 @@ RM			= rm -f
 SRCS		= main.c \
 			  error_check.c \
 			  libft/ft_split.c \
-			  libft/ft_strlcpy.c \
-			  libft/ft_strlen.c \
 			  Stack/init_stack.c \
 			  Stack/stack_utils.c \
 			  Stack/stack_utils_2.c \

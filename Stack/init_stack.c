@@ -6,7 +6,7 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 22:17:27 by amamun            #+#    #+#             */
-/*   Updated: 2026/01/04 20:24:35 by amamun           ###   ########.fr       */
+/*   Updated: 2026/01/06 21:24:26 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	append_node(t_stack_node **stack, int nbr)
 
 	node = malloc(sizeof(t_stack_node));
 	if (!node)
-		return ; // might need free mem
+		return ;
 	node->next = NULL;
 	node->value = nbr;
 	node->cheapest = 0;
@@ -58,8 +58,8 @@ static void	append_node(t_stack_node **stack, int nbr)
 
 void	init_stack(t_stack_node **a, char **argv)
 {
-	int i;
-	long nbr;
+	int		i;
+	long	nbr;
 
 	i = 0;
 	while (argv[i])

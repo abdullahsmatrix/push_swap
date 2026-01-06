@@ -6,7 +6,7 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 20:07:40 by amamun            #+#    #+#             */
-/*   Updated: 2026/01/05 20:50:30 by amamun           ###   ########.fr       */
+/*   Updated: 2026/01/06 21:40:23 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,14 @@
 
 int	main(int argc, char **argv)
 {
-	t_stack_node *a;
-	t_stack_node *b;
+	t_stack_node	*a;
+	t_stack_node	*b;
 
 	a = NULL;
 	b = NULL;
-
 	if (argc == 1 || (argc == 2 && !argv[1][0]))
 		return (1);
-	else if (argc == 2)
+	if (argc == 2)
 		argv = ft_split(argv[1], ' ');
 	else
 		argv = argv + 1;
@@ -37,5 +36,7 @@ int	main(int argc, char **argv)
 			sort_stack(&a, &b);
 	}
 	free_stack(&a);
+	if (2 == argc)
+		free_split(argv);
 	return (0);
 }
